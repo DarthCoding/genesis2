@@ -1,0 +1,1 @@
+This is a read me file. If you expected it too tell you anything useful, then you clearing dont know what a noob I am at this kind of stuff.
