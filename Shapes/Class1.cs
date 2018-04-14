@@ -6,7 +6,6 @@ namespace Shapes
     {
 
 
-
         public void Construct()
         {
             Console.WriteLine("This is a shape.");

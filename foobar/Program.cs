@@ -32,7 +32,7 @@ namespace foobar
             Shape ball = new Shape();
             ball.Construct();
 
-            Random thing = new Random();
+            Random thing = new Random(first);
             thing.Message();
 
             var dataPath = @"./Data";
@@ -45,7 +45,7 @@ namespace foobar
             ReadData(data);
             ReadData(data, numbers);
             
-
+            
 
 
         }
