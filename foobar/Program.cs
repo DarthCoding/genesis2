@@ -16,14 +16,46 @@ namespace foobar
             Console.WriteLine("Here is the multiple of them for you:");
             var first = args.Length > 0 ? Convert.ToInt16(args[0]) : 0;
             var second = args.Length > 1 ? Convert.ToInt16(args[1]) : 0;
+            var third = args.Length > 2 ? Convert.ToInt16(args[2]) : 0;
 
             Console.WriteLine(first * second);
             
+            int[] numbers = new int[5];
+            var i = 0;
+            foreach (var arg in args) {
+                numbers[i] = int.Parse(arg);
+                i++;
+            }
+
+
+
             var dataPath = @"./Data";
 
             Console.WriteLine($"These files are in {dataPath}");
 
             var data = Directory.GetFiles(@"./Data");
+
+
+            ReadData(data);
+            ReadData(data, numbers);
+            
+
+
+
+
+
+
+
+
+        }
+
+        public static void ReadData(string[] data) {
+
+
+            Console.WriteLine("\n\nFirstOverLoaded Function");
+            Console.WriteLine("============================\n");
+
+            Console.WriteLine(data.Length);
 
             foreach (var p in data) {
 
@@ -37,30 +69,48 @@ namespace foobar
 
                 //var num1 = Convert.ToInt32(getNums[0]);
                 var num1 = int.Parse(getNums[0]);
-                var num2 = Convert.ToInt32(first);
+                //var num2 = Convert.ToInt32(first);
 
-                Console.WriteLine(first + num1);
+                Console.WriteLine(num1);
 
             }
 
 
 
-
-            ReadData(data);
-
-
-
-
-
-
-
-
-
         }
 
-        public static void ReadData(string[] dataPoints) {
+        public static void ReadData(string[] data, int[] numbers) {
 
-            Console.WriteLine(dataPoints.Length);
+            Console.WriteLine("\n\nSecondOverLoaded Function");
+            Console.WriteLine("============================\n");
+
+            Console.WriteLine(data.Length);
+            Console.WriteLine(numbers.Length);
+
+            var a = numbers[0];
+            var b = numbers[1];
+            var c = numbers[2];
+
+            foreach (var p in data) {
+
+                Console.WriteLine(p);
+                Console.WriteLine(File.ReadAllText(p));
+
+                var nums = File.ReadAllText(p);
+                var getNums = nums.Split();
+
+                Console.WriteLine(getNums[0]);
+
+                //var num1 = Convert.ToInt32(getNums[0]);
+                var num1 = int.Parse(getNums[0]);
+                //var num2 = Convert.ToInt32(first);
+
+                Console.WriteLine(a + num1);
+                Console.WriteLine(b + num1);
+                Console.WriteLine(c + num1);
+
+            }
+
 
 
         }
