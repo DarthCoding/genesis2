@@ -6,6 +6,7 @@ using System.Text;
 using System.Transactions;
 using System.Configuration;
 using System.Collections.Generic;
+using Shapes;
 
 namespace foobar
 {
@@ -28,6 +29,11 @@ namespace foobar
             }
 
 
+            Shape ball = new Shape();
+            ball.Construct();
+
+            Random thing = new Random();
+            thing.Message();
 
             var dataPath = @"./Data";
 
@@ -39,11 +45,6 @@ namespace foobar
             ReadData(data);
             ReadData(data, numbers);
             
-
-
-
-
-
 
 
 

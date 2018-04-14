@@ -9,3 +9,6 @@ C:\Users\beaum\genesis2\foobar\obj\Debug\netcoreapp2.0\foobar.AssemblyInfo.cs
 C:\Users\beaum\genesis2\foobar\obj\Debug\netcoreapp2.0\foobar.dll
 C:\Users\beaum\genesis2\foobar\obj\Debug\netcoreapp2.0\foobar.pdb
 C:\Users\beaum\genesis2\foobar\obj\Debug\netcoreapp2.0\foobar.csprojResolveAssemblyReference.cache
+C:\Users\beaum\genesis2\foobar\bin\Debug\netcoreapp2.0\Shapes.dll
+C:\Users\beaum\genesis2\foobar\bin\Debug\netcoreapp2.0\Shapes.pdb
+C:\Users\beaum\genesis2\foobar\obj\Debug\netcoreapp2.0\foobar.csproj.CopyComplete

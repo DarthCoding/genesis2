@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "foobar/1.0.0": {
-        "dependencies": {
-          "Shapes": "1.0.0"
-        },
-        "runtime": {
-          "foobar.dll": {}
-        }
-      },
       "Shapes/1.0.0": {
         "runtime": {
           "Shapes.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "foobar/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Shapes/1.0.0": {
       "type": "project",
       "serviceable": false,
